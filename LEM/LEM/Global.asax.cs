@@ -21,12 +21,14 @@ namespace LEM
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            //get all items that are registered as 'startup' items
             foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
                 foreach (var type in assembly.GetTypes())
                 {
                     if (type.GetCustomAttributes(typeof(ManagerAttribute), true).Length > 0)
                     {
+                        //do this as a blind cast. if it fails the app should hard crash, anyway.
                         var manager = (IManager) Activator.CreateInstance(type);
                         manager.Startup();
                     }
