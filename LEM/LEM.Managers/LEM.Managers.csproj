@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F56F211-4B3F-483D-A730-E3A4102D038B}</ProjectGuid>
+    <ProjectGuid>{EC6B350B-D5B0-4892-992D-3B46875D6FCD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LEM.Core</RootNamespace>
-    <AssemblyName>LEM.Core</AssemblyName>
+    <RootNamespace>LEM.Managers</RootNamespace>
+    <AssemblyName>LEM.Managers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,8 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\ManagerAttribute.cs" />
+    <Compile Include="Managers\EmailManager.cs" />
+    <Compile Include="IManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LEM.Core\LEM.Core.csproj">
+      <Project>{9f56f211-4b3f-483d-a730-e3a4102d038b}</Project>
+      <Name>LEM.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

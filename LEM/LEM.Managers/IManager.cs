@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LEM.Core.Attributes
+namespace LEM.Managers
 {
-    [AttributeUsage(AttributeTargets.Class)]
-    public class ManagerAttribute:Attribute
+    public interface IManager
     {
+        void Startup();
     }
 }
