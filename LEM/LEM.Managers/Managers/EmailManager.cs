@@ -18,6 +18,7 @@ namespace LEM.Managers.Managers
         {
             var hub = MessageHub.Hub;
 
+            //register sample event. will get called whenever samplebadgecompleted events are fired.
             hub.Subscribe<SampleBadgeCompleted>(e =>
             {
                 var message = string.Format("{0} : {1}", e.BadgeName, e.User);

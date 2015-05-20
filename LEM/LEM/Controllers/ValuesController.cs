@@ -26,6 +26,7 @@ namespace LEM.Controllers
         // POST api/values
         public void Post([FromBody]string value)
         {
+            //send sample event just to prove concept of Pub/Sub
             MessageHub.Hub.Publish(new SampleBadgeCompleted
             {
                 BadgeName = "my badge",
