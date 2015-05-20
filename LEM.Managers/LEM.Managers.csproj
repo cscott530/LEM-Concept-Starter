@@ -85,7 +85,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\LEM.Core\LEM.Core.csproj">
+    <ProjectReference Include="..\LEM.Core\LEM.Core.csproj">
       <Project>{9f56f211-4b3f-483d-a730-e3a4102d038b}</Project>
       <Name>LEM.Core</Name>
     </ProjectReference>

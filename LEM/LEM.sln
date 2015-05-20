@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LEM", "LEM\LEM.csproj", "{1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LEM.Core", "..\LEM.Core\LEM.Core.csproj", "{9F56F211-4B3F-483D-A730-E3A4102D038B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LEM.Managers", "LEM.Managers\LEM.Managers.csproj", "{EC6B350B-D5B0-4892-992D-3B46875D6FCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LEM.Managers", "..\LEM.Managers\LEM.Managers.csproj", "{EC6B350B-D5B0-4892-992D-3B46875D6FCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

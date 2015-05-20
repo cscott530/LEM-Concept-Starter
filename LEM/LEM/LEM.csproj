@@ -235,10 +235,13 @@
       <Project>{9f56f211-4b3f-483d-a730-e3a4102d038b}</Project>
       <Name>LEM.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LEM.Managers\LEM.Managers.csproj">
+    <ProjectReference Include="..\..\LEM.Managers\LEM.Managers.csproj">
       <Project>{ec6b350b-d5b0-4892-992d-3b46875d6fcd}</Project>
       <Name>LEM.Managers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
