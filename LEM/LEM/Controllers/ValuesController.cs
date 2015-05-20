@@ -4,10 +4,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using LEM.Core.PubSub;
+using LEM.Core.PubSub.Events;
 
 namespace LEM.Controllers
 {
-    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
@@ -25,6 +26,11 @@ namespace LEM.Controllers
         // POST api/values
         public void Post([FromBody]string value)
         {
+            MessageHub.Hub.Publish(new SampleBadgeCompleted
+            {
+                BadgeName = "my badge",
+                User = "and a user, too!"
+            });
         }
 
         // PUT api/values/5

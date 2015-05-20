@@ -7,9 +7,8 @@ using TinyMessenger;
 
 namespace LEM.Core.PubSub.Events
 {
-    public class SampleBadgeCompleted : BaseMessage
+    public class BaseMessage : ITinyMessage
     {
-        public string User { get; set; }
-        public string BadgeName { get; set; }
+        public object Sender { get; private set; }
     }
 }
